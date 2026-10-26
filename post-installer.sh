@@ -82,3 +82,4 @@ rc-update add wsdd boot
 rc-update add apk-polkit-server default
 rc-update del networking boot
 #-------------------------------------------------------
+exit
