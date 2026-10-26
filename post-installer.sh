@@ -75,11 +75,13 @@ apk add xdg-user-dirs xdg-utils elogind polkit polkit-elogind apk-polkit-rs apk-
 #-------------------------------------------------------
 rc-service networking stop
 rc-service networkmanager start
+rc-service samba start
 rc-service wsdd start
 rc-service apk-polkit-server start
 #-------------------------------------------------------
 rc-update add networkmanager default
-rc-update add wsdd boot
+rc-update add samba default
+rc-update add wsdd default
 rc-update add apk-polkit-server default
 rc-update del networking boot
 #-------------------------------------------------------
