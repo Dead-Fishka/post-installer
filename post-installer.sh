@@ -5,6 +5,7 @@ apk add mc wget git
 # Repositories (vX.XX or edge or latest-stable)
 #-------------------------------------------------------
 {
+	echo "# /media/cdrom/apks"
 	echo "http://mirror.ps.kz/alpine/v3.24/main"
 	echo "http://mirror.ps.kz/alpine/v3.24/community"
 	echo "http://mirror.ps.kz/alpine/edge/main"
@@ -19,7 +20,7 @@ apk add terminus-font ttf-inconsolata ttf-dejavu font-misc-cyrillic
 #-------------------------------------------------------
 apk add tzdata musl-locales musl-locales-lang
 #-------------------------------------------------------
-}
+{
 	echo "export CHARSET=ru_RU.UTF-8"
 	echo "export LANGUAGE=ru_RU.UTF-8"
 	echo "export LANG=ru_RU.UTF-8"
@@ -47,7 +48,7 @@ adduser user plugdev
 #-------------------------------------------------------
 setup-desktop mate
 #-------------------------------------------------------
-apk add xdg-user-dirs xdg-utils elogind polkit polkit-elogind apk-polkit-rs apk-polkit-rs-dbg apk-polkit-rs-dev apk-polkit-rs-openrc gvfs gvfs-afc gvfs-mtp gvfs-smb acpid avahi wsdd cronie gcompat
+apk add xdg-user-dirs xdg-utils elogind polkit polkit-elogind apk-polkit-rs apk-polkit-rs-dbg apk-polkit-rs-dev apk-polkit-rs-openrc samba samba-client gvfs gvfs-afc gvfs-mtp gvfs-smb acpid avahi wsdd cronie gcompat
 #-------------------------------------------------------
 # Home dirs
 #-------------------------------------------------------
