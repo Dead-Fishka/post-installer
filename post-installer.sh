@@ -57,16 +57,16 @@ apk add xdg-user-dirs xdg-utils elogind polkit polkit-elogind apk-polkit-rs apk-
 } > $HOME/.config/user-dirs.locale
 #-------------------------------------------------------
 {
-	echo "$HOME/Desktop" "$HOME/Рабочий стол"
-	echo "$HOME/Downloads" "$HOME/Загрузки""
-	echo "$HOME/Templates" "$HOME/Шаблоны""
-	echo "$HOME/Public" "$HOME/Общие""
-	echo "$HOME/Documents" "$HOME/Документы""
-	echo "XDG_MUSIC_DIR="$HOME/Музыка""
-	echo "XDG_PICTURES_DIR="$HOME/Изображения""
-	echo "XDG_VIDEOS_DIR="$HOME/Видео""
-#	echo "XDG_PROJECTS_DIR="$HOME/Проекты""
-} > $HOME/.config/user-dirs.dirs
+	mv "$HOME/Desktop" "$HOME/Рабочий стол"
+	mv "$HOME/Downloads" "$HOME/Загрузки"
+	mv "$HOME/Templates" "$HOME/Шаблоны"
+	mv "$HOME/Public" "$HOME/Общие"
+	mv "$HOME/Documents" "$HOME/Документы"
+	mv "$HOME/Music" "$HOME/Музыка"
+	mv "$HOME/Pictures" "$HOME/Изображения""
+	mv "$HOME/Videos" "$HOME/Видео"
+	mv "$HOME/Projects" "$HOME/Проекты"
+}
 #-------------------------------------------------------
 xdg-user-dirs-update
 #-------------------------------------------------------
