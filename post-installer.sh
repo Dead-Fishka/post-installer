@@ -75,11 +75,13 @@ xdg-user-dirs-update
 rc-service networking stop
 rc-service networkmanager start
 rc-service samba start
+rc-service avahi-daemon start
 rc-service wsdd start
 rc-service apk-polkit-server start
 #-------------------------------------------------------
 rc-update add networkmanager default
 rc-update add samba default
+rc-update avahi-daemon default
 rc-update add wsdd default
 rc-update add apk-polkit-server default
 rc-update del networking boot
