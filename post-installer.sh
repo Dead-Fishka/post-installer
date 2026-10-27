@@ -56,6 +56,8 @@ apk add xdg-user-dirs xdg-utils elogind polkit polkit-elogind apk-polkit-rs apk-
 	echo "ru_RU"
 } > $HOME/.config/user-dirs.locale
 #-------------------------------------------------------
+xdg-user-dirs-update
+#-------------------------------------------------------
 {
 	mv "$HOME/Desktop" "$HOME/Рабочий стол"
 	mv "$HOME/Downloads" "$HOME/Загрузки"
@@ -67,8 +69,6 @@ apk add xdg-user-dirs xdg-utils elogind polkit polkit-elogind apk-polkit-rs apk-
 	mv "$HOME/Videos" "$HOME/Видео"
 	mv "$HOME/Projects" "$HOME/Проекты"
 }
-#-------------------------------------------------------
-xdg-user-dirs-update
 #-------------------------------------------------------
 # On/Off services
 #-------------------------------------------------------
@@ -83,6 +83,8 @@ rc-update add samba default
 rc-update add wsdd default
 rc-update add apk-polkit-server default
 rc-update del networking boot
+#-------------------------------------------------------
+
 #-------------------------------------------------------
 # exit
 reboot
