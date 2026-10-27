@@ -1,6 +1,6 @@
 #!/bin/bash
 #-------------------------------------------------------
-apk add mc wget git
+apk add mc wget
 #-------------------------------------------------------
 # Repositories (vX.XX or edge or latest-stable)
 #-------------------------------------------------------
@@ -53,6 +53,10 @@ apk add xdg-user-dirs xdg-utils elogind polkit polkit-elogind apk-polkit-rs apk-
 # Home dirs
 #-------------------------------------------------------
 {
+	echo "ru_RU"
+} > $HOME/.config/user-dirs.locale
+#-------------------------------------------------------
+{
 	echo "# This file is written by xdg-user-dirs-update"
 	echo "# If you want to change or add directories, just edit the line you're"
 	echo "# interested in. All local changes will be retained on the next run."
@@ -68,8 +72,10 @@ apk add xdg-user-dirs xdg-utils elogind polkit polkit-elogind apk-polkit-rs apk-
 	echo "XDG_MUSIC_DIR="$HOME/Музыка""
 	echo "XDG_PICTURES_DIR="$HOME/Изображения""
 	echo "XDG_VIDEOS_DIR="$HOME/Видео""
-	echo "XDG_PROJECTS_DIR="$HOME/Проекты""
-} > /home/user/.config/user-dirs.dirs
+#	echo "XDG_PROJECTS_DIR="$HOME/Проекты""
+} > $HOME/.config/user-dirs.dirs
+#-------------------------------------------------------
+xdg-user-dirs-update
 #-------------------------------------------------------
 # On/Off services
 #-------------------------------------------------------
@@ -85,4 +91,4 @@ rc-update add wsdd default
 rc-update add apk-polkit-server default
 rc-update del networking boot
 #-------------------------------------------------------
-exit
+# exit 
