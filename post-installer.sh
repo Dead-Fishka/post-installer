@@ -81,7 +81,7 @@ rc-service apk-polkit-server start
 #-------------------------------------------------------
 rc-update add networkmanager default
 rc-update add samba default
-rc-update avahi-daemon default
+rc-update add avahi-daemon default
 rc-update add wsdd default
 rc-update add apk-polkit-server default
 rc-update del networking boot
