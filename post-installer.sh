@@ -56,28 +56,28 @@ apk add xdg-user-dirs xdg-utils elogind polkit polkit-elogind apk-polkit-rs apk-
 	echo "ru_RU"
 } > $HOME/.config/user-dirs.locale
 #-------------------------------------------------------
-xdg-user-dirs-update
+# xdg-user-dirs-update
 #-------------------------------------------------------
-{
-	mv "$HOME/Desktop" "$HOME/Рабочий стол"
-	mv "$HOME/Downloads" "$HOME/Загрузки"
-	mv "$HOME/Templates" "$HOME/Шаблоны"
-	mv "$HOME/Public" "$HOME/Общие"
-	mv "$HOME/Documents" "$HOME/Документы"
-	mv "$HOME/Music" "$HOME/Музыка"
-	mv "$HOME/Pictures" "$HOME/Изображения""
-	mv "$HOME/Videos" "$HOME/Видео"
-	mv "$HOME/Projects" "$HOME/Проекты"
-}
+# {
+#	mv "$HOME/Desktop" "$HOME/Рабочий стол"
+#	mv "$HOME/Downloads" "$HOME/Загрузки"
+#	mv "$HOME/Templates" "$HOME/Шаблоны"
+#	mv "$HOME/Public" "$HOME/Общие"
+#	mv "$HOME/Documents" "$HOME/Документы"
+#	mv "$HOME/Music" "$HOME/Музыка"
+#	mv "$HOME/Pictures" "$HOME/Изображения"
+#	mv "$HOME/Videos" "$HOME/Видео"
+#	mv "$HOME/Projects" "$HOME/Проекты"
+# }
 #-------------------------------------------------------
 # On/Off services
 #-------------------------------------------------------
-rc-service networking stop
-rc-service networkmanager start
-rc-service samba start
-rc-service avahi-daemon start
-rc-service wsdd start
-rc-service apk-polkit-server start
+# rc-service networking stop
+# rc-service networkmanager start
+# rc-service samba start
+# rc-service avahi-daemon start
+# rc-service wsdd start
+# rc-service apk-polkit-server start
 #-------------------------------------------------------
 rc-update add networkmanager default
 rc-update add samba default
