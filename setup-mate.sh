@@ -98,5 +98,9 @@ apk add gnome-software gnome-software-bash-completion gnome-software-dbg gnome-s
 #-------------------------------------------------------
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 #-------------------------------------------------------
+# Greeters
+#-------------------------------------------------------
+lightdm-bash-completion lightdm-dev lightdm-doc lightdm-lang slick-greeter slick-greeter-doc slick-greeter-lang lightdm-gtk-greeter lightdm-gtk-greeter-doc lightdm-gtk-greeter-lang lightdm-openrc lightdm-settings lightdm-settings-lang
+#-------------------------------------------------------
 # exit
 reboot
