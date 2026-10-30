@@ -1,6 +1,6 @@
-#!/bin/bash
+#! /bin/bash
 #-------------------------------------------------------
-apk add mc wget
+apk add mc wget htop fastfetch
 #-------------------------------------------------------
 # Repositories (vX.XX or edge or latest-stable)
 #-------------------------------------------------------
@@ -32,7 +32,7 @@ apk add lang
 # xorg and etc
 #-------------------------------------------------------
 setup-xorg-base
-# setup-wayland-base
+setup-wayland-base
 #-------------------------------------------------------
 apk add alsa-utils alsa-plugins-pulse pulseaudio pulseaudio-alsa pulseaudio-utils pulseaudio-bluez pavucontrol
 #-------------------------------------------------------
@@ -48,7 +48,7 @@ adduser user plugdev
 #-------------------------------------------------------
 setup-desktop mate
 #-------------------------------------------------------
-apk add xdg-user-dirs xdg-utils elogind polkit polkit-elogind apk-polkit-rs apk-polkit-rs-dbg apk-polkit-rs-dev apk-polkit-rs-openrc samba samba-client gvfs gvfs-afc gvfs-mtp gvfs-smb avahi wsdd cronie gcompat
+apk add xdg-user-dirs xdg-utils elogind polkit polkit-elogind apk-polkit-rs apk-polkit-rs-dbg apk-polkit-rs-dev apk-polkit-rs-openrc samba samba-client gstreamer gvfs gvfs-afc gvfs-mtp gvfs-smb avahi wsdd cronie gcompat
 #-------------------------------------------------------
 # Home dirs
 #-------------------------------------------------------
@@ -90,4 +90,3 @@ rc-update del networking boot
 #-------------------------------------------------------
 # exit
 reboot
-
