@@ -48,7 +48,7 @@ adduser user plugdev
 #-------------------------------------------------------
 setup-desktop mate
 #-------------------------------------------------------
-apk add xdg-user-dirs xdg-utils elogind polkit polkit-elogind apk-polkit-rs apk-polkit-rs-dbg apk-polkit-rs-dev apk-polkit-rs-openrc samba samba-client gvfs gvfs-afc gvfs-mtp gvfs-smb acpid avahi wsdd cronie gcompat
+apk add xdg-user-dirs xdg-utils elogind polkit polkit-elogind apk-polkit-rs apk-polkit-rs-dbg apk-polkit-rs-dev apk-polkit-rs-openrc samba samba-client gvfs gvfs-afc gvfs-mtp gvfs-smb avahi wsdd cronie gcompat
 #-------------------------------------------------------
 # Home dirs
 #-------------------------------------------------------
