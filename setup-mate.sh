@@ -86,7 +86,17 @@ rc-update add wsdd default
 rc-update add apk-polkit-server default
 rc-update del networking boot
 #-------------------------------------------------------
-
+# Add apps
+#-------------------------------------------------------
+apk add mate-tweak eom atril 7zip shotwell pinta transmission evolution parole vlc shotcut gnome-shortwave audacious audacity libreoffice libreoffice-lang-ru
+#-------------------------------------------------------
+# Add Gnonome software
+#-------------------------------------------------------
+apk add gnome-software gnome-software-bash-completion gnome-software-dbg gnome-software-dev gnome-software-doc gnome-software-lang gnome-software-lib flatpak gnome-software-plugin-flatpak gnome-software-plugin-sysupdate gnome-software-systemd gnome-software-plugin-apk2 gnome-software-plugin-apk2-dbg
+#-------------------------------------------------------
+# Flathub repo
+#-------------------------------------------------------
+flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 #-------------------------------------------------------
 # exit
 reboot
