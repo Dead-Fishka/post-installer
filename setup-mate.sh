@@ -48,8 +48,8 @@ adduser user plugdev
 #-------------------------------------------------------
 setup-desktop mate
 #-------------------------------------------------------
-apk add xdg-user-dirs xdg-utils elogind polkit polkit-elogind apk-polkit-rs apk-polkit-rs-dbg apk-polkit-rs-dev apk-polkit-rs-openrc samba samba-client gstreamer gvfs-full avahi cifs-utils wsdd cronie gcompat
-# gvfs-afc gvfs-avahi gvfs-mtp gvfs-smb 
+apk add xdg-user-dirs xdg-utils elogind polkit polkit-elogind apk-polkit-rs apk-polkit-rs-dbg apk-polkit-rs-dev apk-polkit-rs-openrc samba samba-client gstreamer gvfs-full avahi cifs-utils wsdd cups cups-pdf print-manager cronie gcompat
+# iwd wpa_gui gvfs-afc gvfs-avahi gvfs-mtp gvfs-smb 
 #-------------------------------------------------------
 # Home dirs
 #-------------------------------------------------------
@@ -81,11 +81,13 @@ apk add xdg-user-dirs xdg-utils elogind polkit polkit-elogind apk-polkit-rs apk-
 # rc-service apk-polkit-server start
 #-------------------------------------------------------
 rc-update add networkmanager default
+# rc-update add iwd default
 rc-update add samba default
 rc-update add avahi-daemon default
 rc-update add wsdd default
 rc-update add apk-polkit-server default
 rc-update del networking boot
+# rc-update del wpa-supplicant
 #-------------------------------------------------------
 # Add apps
 #-------------------------------------------------------
