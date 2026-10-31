@@ -48,7 +48,8 @@ adduser user plugdev
 #-------------------------------------------------------
 setup-desktop mate
 #-------------------------------------------------------
-apk add xdg-user-dirs xdg-utils elogind polkit polkit-elogind apk-polkit-rs apk-polkit-rs-dbg apk-polkit-rs-dev apk-polkit-rs-openrc samba samba-client gstreamer gvfs gvfs-afc gvfs-avahi gvfs-mtp gvfs-smb avahi wsdd cronie gcompat
+apk add xdg-user-dirs xdg-utils elogind polkit polkit-elogind apk-polkit-rs apk-polkit-rs-dbg apk-polkit-rs-dev apk-polkit-rs-openrc samba samba-client gstreamer gvfs-full avahi cifs-utils wsdd cronie gcompat
+# gvfs-afc gvfs-avahi gvfs-mtp gvfs-smb 
 #-------------------------------------------------------
 # Home dirs
 #-------------------------------------------------------
@@ -88,7 +89,7 @@ rc-update del networking boot
 #-------------------------------------------------------
 # Add apps
 #-------------------------------------------------------
-apk add mate-tweak eom atril 7zip shotwell pinta transmission evolution celluloid vlc shotcut gnome-shortwave audacious audacity libreoffice libreoffice-lang-ru
+apk add mate-tweak engrampa eom atril 7zip shotwell pinta transmission evolution celluloid vlc shotcut gnome-shortwave audacious audacity libreoffice libreoffice-lang-ru
 #-------------------------------------------------------
 # Add Gnonome software
 #-------------------------------------------------------
