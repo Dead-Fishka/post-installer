@@ -38,7 +38,7 @@ apk add alsa-utils alsa-plugins-pulse pulseaudio pulseaudio-alsa pulseaudio-util
 #-------------------------------------------------------
 # NetworkManager
 #-------------------------------------------------------
-apk add networkmanager networkmanager-tui networkmanager-cli networkmanager-wifi network-manager-applet
+apk add networkmanager networkmanager-tui networkmanager-cli networkmanager-wifi network-manager-applet iwd
 #-------------------------------------------------------
 # For Wi-Fi, add user to plugdev group
 #-------------------------------------------------------
@@ -81,13 +81,13 @@ apk add xdg-user-dirs xdg-utils elogind polkit polkit-elogind apk-polkit-rs apk-
 # rc-service apk-polkit-server start
 #-------------------------------------------------------
 rc-update add networkmanager default
-# rc-update add iwd default
+rc-update add iwd default
 rc-update add samba default
 rc-update add avahi-daemon default
 rc-update add wsdd default
 rc-update add apk-polkit-server default
 rc-update del networking boot
-# rc-update del wpa-supplicant
+rc-update del wpa-supplicant
 #-------------------------------------------------------
 # Add apps
 #-------------------------------------------------------
