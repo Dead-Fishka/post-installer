@@ -38,7 +38,7 @@ apk add alsa-utils alsa-plugins-pulse pulseaudio pulseaudio-alsa pulseaudio-util
 #-------------------------------------------------------
 # NetworkManager
 #-------------------------------------------------------
-apk add networkmanager networkmanager-tui networkmanager-cli networkmanager-wifi network-manager-applet iwd
+apk add networkmanager networkmanager-tui networkmanager-cli networkmanager-wifi network-manager-applet iwd iwd-dbg iwd-doc
 #-------------------------------------------------------
 # For Wi-Fi, add user to plugdev group
 #-------------------------------------------------------
@@ -49,7 +49,7 @@ adduser user plugdev
 setup-desktop mate
 #-------------------------------------------------------
 apk add xdg-user-dirs xdg-utils elogind polkit polkit-elogind apk-polkit-rs apk-polkit-rs-dbg apk-polkit-rs-dev apk-polkit-rs-openrc samba samba-client gstreamer gvfs-full avahi cifs-utils wsdd cups cups-pdf print-manager cronie gcompat
-# iwd wpa_gui gvfs-afc gvfs-avahi gvfs-mtp gvfs-smb 
+# wpa_gui gvfs-afc gvfs-avahi gvfs-mtp gvfs-smb 
 #-------------------------------------------------------
 # Home dirs
 #-------------------------------------------------------
@@ -103,7 +103,7 @@ flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.f
 #-------------------------------------------------------
 # Greeters
 #-------------------------------------------------------
-lightdm-bash-completion lightdm-dev lightdm-doc lightdm-lang slick-greeter slick-greeter-doc slick-greeter-lang lightdm-gtk-greeter lightdm-gtk-greeter-doc lightdm-gtk-greeter-lang lightdm-openrc lightdm-settings lightdm-settings-lang
+apk add lightdm-bash-completion lightdm-dev lightdm-doc lightdm-lang slick-greeter slick-greeter-doc slick-greeter-lang lightdm-gtk-greeter lightdm-gtk-greeter-doc lightdm-gtk-greeter-lang lightdm-openrc lightdm-settings lightdm-settings-lang
 #-------------------------------------------------------
 # exit
 reboot
