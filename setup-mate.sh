@@ -93,7 +93,7 @@ rc-update del networking boot
 #-------------------------------------------------------
 # Add apps
 #-------------------------------------------------------
-apk add mate-tweak engrampa eom atril 7zip shotwell pinta transmission evolution celluloid vlc vlc-qt shotcut gnome-shortwave audacious audacity libreoffice libreoffice-lang-ru
+apk add mate-tweak engrampa eom atril 7zip shotwell pinta transmission evolution celluloid vlc vlc-qt shotcut audacious audacity libreoffice libreoffice-lang-ru
 #-------------------------------------------------------
 # Add Gnonome software
 #-------------------------------------------------------
