@@ -1,6 +1,6 @@
 #! /bin/bash
 #-------------------------------------------------------
-apk add mc wget htop fastfetch
+apk add mc wget curl htop fastfetch
 #-------------------------------------------------------
 # Repositories (vX.XX or edge or latest-stable)
 #-------------------------------------------------------
@@ -54,7 +54,7 @@ adduser user plugdev
 setup-desktop mate
 #-------------------------------------------------------
 apk add xdg-user-dirs xdg-utils elogind polkit polkit-elogind apk-polkit-rs apk-polkit-rs-dbg apk-polkit-rs-dev apk-polkit-rs-openrc
-apk add samba samba-client gstreamer gvfs-full avahi avahi2dns avahi2dns-openrc avahi-dev avahi-doc avahi-glib avahi-lang avahi-libs avahi-nftrules avahi-openrc avahi-static avahi-tools cifs-utils wsdd cups cups-pdf print-manager cronie gcompat
+apk add samba samba-client gstreamer gvfs-full avahi avahi-dev avahi-doc cifs-utils wsdd cups cups-pdf print-manager cronie gcompat
 # wpa_gui gvfs-afc gvfs-avahi gvfs-mtp gvfs-smb 
 #-------------------------------------------------------
 # Home dirs
@@ -97,7 +97,7 @@ rc-update del networking boot
 #-------------------------------------------------------
 # Add apps
 #-------------------------------------------------------
-apk add mate-tweak engrampa eom atril 7zip shotwell pinta transmission evolution celluloid vlc vlc-qt shotcut audacious audacity libreoffice libreoffice-lang-ru
+apk add abiword gnumeric evolution xsane gnucash mate-tweak engrampa eom atril shotwell pinta transmission evolution celluloid vlc vlc-qt shotcut audacious audacity 
 #-------------------------------------------------------
 # Add Gnonome software
 #-------------------------------------------------------
@@ -109,7 +109,7 @@ flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.f
 #-------------------------------------------------------
 # Greeters
 #-------------------------------------------------------
-apk add lightdm-bash-completion lightdm-dev lightdm-doc lightdm-lang slick-greeter slick-greeter-doc slick-greeter-lang lightdm-gtk-greeter lightdm-gtk-greeter-doc lightdm-gtk-greeter-lang lightdm-openrc lightdm-settings lightdm-settings-lang
+apk add lightdm lightdm-doc lightdm-lang lightdm-openrc lightdm-settings lightdm-settings-lang slick-greeter slick-greeter-doc slick-greeter-lang lightdm-gtk-greeter lightdm-gtk-greeter-doc lightdm-gtk-greeter-lang
 #-------------------------------------------------------
 # exit
 reboot
