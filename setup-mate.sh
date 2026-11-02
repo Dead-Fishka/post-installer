@@ -49,7 +49,8 @@ adduser user plugdev
 #-------------------------------------------------------
 setup-desktop mate
 #-------------------------------------------------------
-apk add xdg-user-dirs xdg-utils elogind polkit polkit-elogind apk-polkit-rs apk-polkit-rs-dbg apk-polkit-rs-dev apk-polkit-rs-openrc samba samba-client gstreamer gvfs-full avahi cifs-utils wsdd cups cups-pdf print-manager cronie gcompat
+apk add xdg-user-dirs xdg-utils elogind polkit polkit-elogind apk-polkit-rs apk-polkit-rs-dbg apk-polkit-rs-dev apk-polkit-rs-openrc
+apk add samba samba-client gstreamer gvfs-full avahi avahi2dns avahi2dns-openrc avahi-dev avahi-doc avahi-glib avahi-lang avahi-libs avahi-nftrules avahi-openrc avahi-static avahi-tools cifs-utils wsdd cups cups-pdf print-manager cronie gcompat
 # wpa_gui gvfs-afc gvfs-avahi gvfs-mtp gvfs-smb 
 #-------------------------------------------------------
 # Home dirs
