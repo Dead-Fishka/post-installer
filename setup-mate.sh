@@ -10,7 +10,7 @@ apk add mc wget curl htop fastfetch
 	echo "http://mirror.ps.kz/alpine/v3.24/community"
 	echo "http://mirror.ps.kz/alpine/edge/main"
 	echo "http://mirror.ps.kz/alpine/edge/community"
-	echo "# http://mirror.ps.kz/alpine/edge/testing"
+	echo "http://mirror.ps.kz/alpine/edge/testing"
 } > /etc/apk/repositories
 #-------------------------------------------------------
 # Locales
@@ -54,7 +54,7 @@ adduser user plugdev
 setup-desktop mate
 #-------------------------------------------------------
 apk add xdg-user-dirs xdg-utils elogind polkit polkit-elogind apk-polkit-rs apk-polkit-rs-dbg apk-polkit-rs-dev apk-polkit-rs-openrc
-apk add samba samba-client gstreamer gvfs-full avahi avahi-dev avahi-doc cifs-utils wsdd cups cups-pdf print-manager cronie gcompat
+apk add samba samba-client gvfs-full avahi avahi-dev avahi-doc cifs-utils wsdd cups cups-pdf print-manager cronie gcompat
 # wpa_gui gvfs-afc gvfs-avahi gvfs-mtp gvfs-smb 
 #-------------------------------------------------------
 # Home dirs
@@ -97,7 +97,7 @@ rc-update del networking boot
 #-------------------------------------------------------
 # Add apps
 #-------------------------------------------------------
-apk add abiword gnumeric evolution xsane gnucash mate-tweak engrampa eom atril shotwell pinta transmission evolution celluloid vlc vlc-qt shotcut audacious audacity 
+apk add abiword gnumeric evolution telegram-desktop xsane gnucash mate-tweak engrampa eom atril shotwell pinta transmission vlc vlc-qt shotcut audacious audacity 
 #-------------------------------------------------------
 # Add Gnonome software
 #-------------------------------------------------------
